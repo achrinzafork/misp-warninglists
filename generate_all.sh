@@ -48,6 +48,17 @@ python3 generate-internetcleanup-scanner.py
 #python3 generate-umich-cse-connection-attempts.py # ON HOLD DUE TO 403 (due to User-Agent)
 python3 generate-icloud-private-relay.py
 python3 generate-bunny-net.py
+
+# Force-generate Cloudflare Radar top domains if requested.
+# Otherwise, generate only if token is set.
+#
+# CI pipelines usually don't track secret value changes in Git.
+# Hence, using the *_MUST_GENERATE (a regular, non-secret env var
+# who's value is tracked in Git) makes it clear when the generation
+# is turned on or off.
+if [ -n "$CLOUDFLARE_DOMAINS_MUST_GENERATE" -o -n "$CLOUDFLARE_API_TOKEN" ]; then
+    python3 generate-cloudflare-top-domains.py
+fi
 popd
 
 ./jq_all_the_things.sh
