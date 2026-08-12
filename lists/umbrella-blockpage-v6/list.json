@@ -1,12 +1,12 @@
 {
   "description": "Cisco Umbrella blockpage in IPv6",
   "list": [
-    "::ffff:9270:3d68",
-    "::ffff:9270:3d69",
-    "::ffff:9270:3d6a",
-    "::ffff:9270:3d6b",
-    "::ffff:9270:3d6c",
-    "::ffff:9270:3d6e"
+    "::ffff:146.112.61.104",
+    "::ffff:146.112.61.105",
+    "::ffff:146.112.61.106",
+    "::ffff:146.112.61.107",
+    "::ffff:146.112.61.108",
+    "::ffff:146.112.61.110"
   ],
   "matching_attributes": [
     "ip-src",
@@ -15,5 +15,5 @@
   ],
   "name": "cisco-umbrella-blockpage-ipv6",
   "type": "cidr",
-  "version": 20260811
+  "version": 20260812
 }
