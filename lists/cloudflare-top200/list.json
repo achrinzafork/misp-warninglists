@@ -139,7 +139,6 @@
     "one.one",
     "onelink.me",
     "openai.com",
-    "openx.net",
     "opera.com",
     "outlook.com",
     "oxylabs.io",
@@ -163,10 +162,12 @@
     "sentry.io",
     "shalltry.com",
     "sharepoint.com",
+    "shopifysvc.com",
     "skype.com",
     "smartadserver.com",
     "snapchat.com",
     "spotify.com",
+    "static.microsoft",
     "steamserver.net",
     "taboola.com",
     "telegram.org",
@@ -185,7 +186,6 @@
     "ui.com",
     "unity3d.com",
     "vivoglobal.com",
-    "vk.ru",
     "vkuserphoto.ru",
     "vungle.com",
     "whatsapp.com",
@@ -211,5 +211,5 @@
   ],
   "name": "Top 200 domains from Cloudflare Radar",
   "type": "string",
-  "version": 20260810
+  "version": 20260812
 }
